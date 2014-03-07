@@ -1,0 +1,172 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font: sans-serif;
+    background-color: #d7d7d7;
+}
+* ::selection {
+	color: #000000; 
+	background-color:#0066FF;
+}
+.header {
+    text-align: center;
+}
+.header h1 {
+    color: #000;
+}
+.footer {
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #ddd;
+}
+.main {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.data {
+    float: left;
+	width: 300px;
+	height: 800px;
+}
+.data .CodeMirror,
+#data-text {
+    box-sizing: border-box;
+	overflow-y: auto;
+	float: left;
+	width: 300px;
+	height: 600px;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid black;
+	background-color: #E7e7e7;
+	color: #004499;
+	font-size: 16px;
+}
+.CodeMirror-gutter {
+	border-right: 1px solid #000;
+	background-color: #d7d7d7;
+	color: #0066FF;
+}
+.CodeMirror-gutters {
+	border-right:#000000;
+}
+.row {
+	width: 300px;
+	overflow: hidden;
+	border: 2px solid;
+	border-bottom: 0px;
+}
+#data-table {
+	position:absolute;
+	top:80px;
+	right: 0px;
+    box-sizing: border-box;
+	width: 250px;
+	height: 600px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	float: right;
+}
+.row.error {
+    background-color: #FFBBBB;
+}
+.cell {
+    float: left;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.cell.number {
+    width: 40px;
+}
+.cell.value {
+    width: 70px;
+}
+.cell.name {
+    width: 175px;
+    border-right: 2px solid;
+}
+.cell.errorValue {
+    font-size: 14px;
+}
+.insert-default,
+#choose-color-map-fill {
+	position: absolute;
+	left: 320px;
+	border: 2px solid;
+	padding: 4px 10px;
+	box-sizing: border-box;
+	width: 150px;
+	height: 40px;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align:center;
+}
+.insert-default {
+	top: 80px;
+}
+#choose-color-map-fill {
+	top: 135px;
+}
+.draw:hover{
+	background-color: #0066FF;
+}
+#map {
+    float: left;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    width: 760px;
+    height: 500px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.map_container {
+    width: 400px;
+    height: 500px;
+    float: right;
+}
+.clear {
+	clear: both;
+}
+download-button-wrapper {
+    display: inline;
+    right: 10px;
+    max-width: 700px;
+}
+.download-button {
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    max-width: 200px;
+    float: right;
+    display: block;
+}
+.download-button:first-child{
+    background: #00AA00;
+}
+.download-button:last-child{
+    background: #FF0000;
+}
+.red {
+    background: #f00;
+}
+.green {
+    background: #0a0;
+}
+.disqus {
+    
+}

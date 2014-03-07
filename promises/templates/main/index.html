@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block head %}  
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/responsiv.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/codemirror.css" />		
+	
+	<script charset="utf-8" src="/static/js/libs/jquery.min.js?1"></script>
+	
+	<script charset="utf-8" src="/static/js/libs/d3.v3.min.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/queue.v1.min.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/d3.geo.projection.v0.min.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/topojson.v0.min.js?1"></script>
+
+	<script charset="utf-8" src="/static/js/libs/fileSaver.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/blob.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/canvasToBlob.js?1"></script>
+	
+	<script charset="utf-8" src="/static/js/libs/canvg/rgbcolor.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/canvg/StackBlur.js?1"></script>
+	<script charset="utf-8" src="/static/js/libs/canvg/canvg.js?1"></script>
+	
+	<script charset="utf-8" src="/static/js/libs/fuzzyset.js?1"></script>
+
+    <script charset="utf-8" src="/static/js/libs/codemirror.js?1"></script>
+	<script charset="utf-8" src="/static/js/downloader.js?1"></script>
+	<script charset="utf-8" src="/static/js/titles.js?1"></script>
+	<script charset="utf-8" src="/static/js/validate.js?1"></script>
+	<script charset="utf-8" src="/static/js/disqus.js?1"></script>
+    <script charset="utf-8" src="/static/js/analytics.js?1"></script>
+	<script charset="utf-8" src="/static/js/init.js?1"></script>
+	
+	<script charset="utf-8" src="/static/js/choropleth.js?1"></script>
+{% endblock %}
+ 
+{% block content %}
+    <header class="header" id="header">
+        <a href="#" target="_top" alt="EASYMAP" title="EASYMAP">
+            <h1>EASYMAP</h1>
+        </a>
+    </header>
+    <div class="main" id="main">
+        <button class="insert-default">Insert default</button>
+        <select id="choose-color-map-fill">
+        	<option value="Blues">Blues</option>
+        	<option value="Reds">Reds</option>
+        	<option value="Greens">Greens</option>
+        </select>
+        <div class="data">
+            <textarea id="data-text" class="data-text"></textarea>
+        </div>
+        <div class="map" id="map">
+			<svg class="map_svg" id="map_svg" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+    	<div id="data-table"></div>
+        <div class="clear"></div>
+        <div class="download-button-wrapper">
+            <span class="download-button green" id="download-svg">Download SVG</span>
+            <span class="download-button red" id="download-png">Download PNG</span>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer"></footer>
+{% endblock %}

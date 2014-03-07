@@ -1,0 +1,12 @@
+@media (max-width: 1600) { 
+    /* Header */    
+    .header{
+        width: 1600px;
+    }    
+
+
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .space-bar,.column2 {
+        width: 1000px;
+    }
