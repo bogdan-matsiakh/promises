@@ -7,7 +7,8 @@ def index(request):
         return render(request, 'main/index.html')
     else:
         # Do something for anonymous users.
-        return render(request, 'main/register.html')
+        #return render(request, 'main/register.html')
+        return render(request, 'main/index.html')
 
 def login(request):
     user = authenticate(username='john', password='secret')
